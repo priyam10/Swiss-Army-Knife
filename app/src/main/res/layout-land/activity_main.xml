@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
+    tools:context="edu.njit.pp577.swissarmyknife.MainActivity">
+
+    <ImageView
+        android:id="@+id/knife6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/knife7"
+        android:clickable="true"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/left_switch" />
+
+    <ImageView
+        android:id="@+id/knife5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/knife5"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="35dp"
+        android:clickable="true" />
+
+
+    <ImageView
+        android:id="@+id/knife1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/knife1"
+        android:clickable="true"
+        android:layout_above="@+id/imageView"
+        android:layout_alignEnd="@+id/knife2"
+        android:layout_marginEnd="23dp" />
+
+    <ImageView
+        android:id="@+id/knife4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/knife4"
+        android:layout_marginEnd="30dp"
+        android:clickable="true"
+        android:layout_below="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/knife2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:background="@drawable/knife3"
+        android:clickable="true"
+        android:layout_alignEnd="@+id/knife4"
+        android:layout_alignTop="@id/knife1" />
+
+    <ImageView
+        android:id="@+id/knife3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:background="@drawable/knife6"
+        android:clickable="true"
+        android:layout_above="@+id/imageView"
+        android:layout_alignEnd="@+id/knife5" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_rect"
+        android:layout_centerInParent="true"
+        android:id="@+id/imageView">
+    </ImageView>
+
+    <Button
+        android:id="@+id/right_switch"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/circle_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/knife4" />
+
+    <Button
+        android:id="@+id/left_switch"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/circle_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignTop="@id/right_switch"
+        android:layout_alignStart="@+id/knife5" />
+
+
+</RelativeLayout>
+
